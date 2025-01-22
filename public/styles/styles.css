@@ -26,7 +26,7 @@ h1 {
 .container {
   text-align: left; /* Left align all the content inside the container */
   width: 100%;
-  max-width: 600px; /* Increased max-width */
+  max-width: 800px; /* Increased max-width */
   padding: 30px;
   background-color: #1f2a37; /* Dark background for the container */
   border-radius: 10px;
@@ -117,3 +117,52 @@ input[type="file"]::-webkit-file-upload-button {
 input[type="file"]::-webkit-file-upload-button:hover {
   background-color: #008c9e;
 }
+/* Loading animation styles */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #00bcd4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loadingMessage {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+/* Adjust button and file input to avoid overlap with the loading spinner 
+#uploadButton,
+#file {
+  pointer-events: none; /* Disable user interactions during loading 
+  opacity: 0.5;
+}
+*/

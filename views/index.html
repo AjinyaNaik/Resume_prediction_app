@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File upload</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Resume Screening</h1>
+
+    <!-- File input -->
+    <label for="file">Please upload your Resume(.txt or .pdf):</label>
+    <input type="file" id="file" accept=".txt,.pdf" required />
+    <button id="uploadButton">Predict</button>
+    <!-- Add the loading animation and messages -->
+    <div id="loading" class="loading-container" style="display: none">
+      <div class="spinner"></div>
+      <div id="loadingMessage">Reading your resume...</div>
+    </div>
+    <h2 id="result"></h2>
+    <!-- This will display the job category -->
+  </body>
+</html>
