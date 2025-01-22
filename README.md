@@ -11,7 +11,7 @@ A web application for predicting the best job category for a given resume. The a
 ## Frontend:
 - HTML, CSS for styling
 - JavaScript for functionality and interaction with backend
-- Node.js for frontedn requests
+- Node.js serves as frontend serves who interacts with user and calls requests to python flask server 
 ## Backend:
 - Flask (Python) for handling backend requests and running the prediction model
 ## Libraries/Frameworks:
